@@ -9,6 +9,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { CiSearch } from 'react-icons/ci';
 import {BsDropbox } from 'react-icons/bs';
 import {BsPaypal } from 'react-icons/bs';
+import pattern from '../downloads/pattern.png';
 
 function Herosection() {
     return (
@@ -31,14 +32,21 @@ function Herosection() {
                         </Button>
                     </InputGroup>
                     <div className='Hero_blur'>
-                        <span className='Her'>Sponsored by: </span>
-                        <span><BsPaypal/> Paypal </span>
-                        <span> Google.</span>
-                        <span> <BsDropbox/> Dropbox</span>
+                        <span className='Hero_sp'>Sponsored by: </span>
+                        <span className='Hero_span'><BsPaypal/> Paypal </span>
+                        <span className='Hero_span'> Google.</span>
+                        <span className='Hero_span'> <BsDropbox/> Dropbox</span>
                     </div>
                 </Col>
                 {/* <Col xs={{ order: 1 }}>Third, but second</Col> */}
-                <Col lg='5'>Third, but second</Col>
+                <Col className='Hero_right' lg='5'>
+                    <div className='pattern_par'>
+                        <img className='pattern' src={pattern} alt='pattern' />
+                        <video width='340' height='420' controls='false'>
+                            <source src='/video/animation.mp4' type='video/mp4' />
+                        </video>
+                    </div>
+                </Col>
             </Row>
         </Container>
         </div>

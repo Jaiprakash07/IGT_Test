@@ -10,20 +10,22 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 function Navbar() {
     return (
         <>
-            <Container fluid="md">
-                <Row className='text-center'>
-                    <Col><FaCrown /> Landguru</Col>
-                    <Col md={6}>
-                        <Nav className='justify-content-center'>
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#features">Adversite<MdKeyboardArrowDown /></Nav.Link>
-                            <Nav.Link href="#pricing">Supports<MdKeyboardArrowDown /></Nav.Link>
-                            <Nav.Link href="#pricing">Contact</Nav.Link>
-                        </Nav>
-                    </Col>
-                    <Col><Button href="#" size='sm'>Try for free</Button>{''}</Col>
-                </Row>
-            </Container>
+            <div className='Nav pt-2'>
+                <Container fluid="md">
+                    <Row className='text-center'>
+                        <Col className='pt-2 fw-bolder'><FaCrown /> Landguru</Col>
+                        <Col md={6}>
+                            <Nav className='justify-content-center'>
+                                <Nav.Link href="#home" className='text-dark'>Home</Nav.Link>
+                                <Nav.Link href="#features" className='text-dark'>Adversite<MdKeyboardArrowDown /></Nav.Link>
+                                <Nav.Link href="#pricing" className='text-dark'>Supports<MdKeyboardArrowDown /></Nav.Link>
+                                <Nav.Link href="#pricing" className='text-dark'>Contact</Nav.Link>
+                            </Nav>
+                        </Col>
+                        <Col className='pt-2'><Button className='bg-light fw-bolder border-0 text-warning' href="#" size='sm'>Try for free</Button>{''}</Col>
+                    </Row>
+                </Container>
+            </div>
         </>
     )
 }

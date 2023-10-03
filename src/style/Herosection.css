@@ -1,5 +1,6 @@
 .Herosec {
     padding: 40px 0px;
+    /* padding-top: 20px; */
     /* background-image: linear-gradient(to right, rgb(248, 224, 228) 67%, #fff 50%); */
 }
 
@@ -24,8 +25,36 @@
 .Hero_blur {
     color: rgb(224, 168, 176);
     margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.Hero_sp {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.Hero_span {
+    padding: 0px 2px;
 }
 
 .Hero_Left {
     padding-right: 70px;
+}
+
+.Hero_right {
+    display: flex;
+    justify-content: center;
+}
+
+.pattern_par {
+    position: relative;
+}
+
+.pattern {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: -1;
 }
