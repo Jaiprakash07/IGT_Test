@@ -1,0 +1,31 @@
+.Herosec {
+    padding: 40px 0px;
+    /* background-image: linear-gradient(to right, rgb(248, 224, 228) 67%, #fff 50%); */
+}
+
+.Hero_tru {
+    font-size: 13px;
+}
+
+.Hero_head {
+    font-size: 60px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.Hero_para {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-right: 120px;
+    margin-bottom: 25px;
+}
+
+.Hero_blur {
+    color: rgb(224, 168, 176);
+    margin-top: 25px;
+}
+
+.Hero_Left {
+    padding-right: 70px;
+}
